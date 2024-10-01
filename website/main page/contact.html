@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تواصل معنا</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            margin-top: 20px;
+        }
+        input, textarea {
+            width: 300px;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>تواصل معنا</h1>
+    <p>إذا كان لديك أي استفسارات أو تعليقات، لا تتردد في التواصل معنا.</p>
+
+    <form id="contactForm">
+        <input type="text" id="userName" placeholder="اسمك" required>
+        <input type="email" id="userEmail" placeholder="بريدك الإلكتروني" required>
+        <textarea id="userMessage" rows="4" placeholder="اكتب رسالتك هنا..." required></textarea>
+        <button type="button" onclick="sendMessage()">إرسال</button>
+    </form>
+
+    <script>
+
+        function sendMessage() {
+            const userName = document.getElementById("userName").value;
+            const userEmail = document.getElementById("userEmail").value;
+            const userMessage = document.getElementById("userMessage").value;
+
+            if (!userName || !userEmail || !userMessage) {
+                alert("يرجى ملء جميع الحقول.");
+                return;
+            }
+
+            alert(`شكرًا لك، ${userName}! تم إرسال رسالتك بنجاح.`);
+            document.getElementById("contactForm").reset();
+        }
+    </script>
+</body>
+</html>

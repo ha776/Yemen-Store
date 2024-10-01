@@ -1,0 +1,40 @@
+body {transition:0.5s;font-family: 'Noto Sans Arabic', sans-serif;background-color: #F9F6F0;color: #333;margin: 0;padding: 0;}
+header {background-color: #0b0eb2; color: white;padding: 30px;text-align: center;}
+h1 {color: white;text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue}
+nav ul {padding: 10px;margin: 0;}
+nav li {display:inline;padding: 25px;margin: 0 15px;}
+nav a {color: rgb(244, 243, 246); text-decoration: none;}
+nav a:hover {text-decoration: none;}
+.registration-form {max-width: 500px; margin: 40px auto; padding: 30px;
+    border: 1px solid #ccc;border-radius: 10px;background-color: #fff;box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);}
+.borderforli{
+        border: groove ;
+        border-radius: 10px 4px
+    }
+h2 {text-align: center;margin-bottom: 20px;color: #3d61d6; }
+label {display: block;margin-bottom: 8px;font-weight: bold;}
+input, select {
+    width: 100%;padding: 12px;
+    margin-bottom: 15px;border: 1px solid #ccc;
+    border-radius: 5px;font-size: 16px;}
+input:focus, select:focus {
+    border-color: #284179;outline: none;}
+button {background-color: #0b0eb2;color: white;padding: 12px;border: none;border-radius: 5px;cursor: pointer;font-size: 16px;transition: background-color 0.3s;width: 100%; /* Full width for button */}
+button:hover {background-color: #0b0eb2;}
+.footer-container {display: flex; justify-content: space-around;flex-wrap: wrap ;padding: 20px 0;}
+.footer-section {flex: 1; margin: 10px;}
+.footer-section ul {list-style-type: none;padding: 0;}
+.footer-section li {margin: 5px 0;}
+.footer-section a {color: white; text-decoration: none;}
+.footer-section a:hover {text-decoration: underline;}
+footer {background-color: #333;color: white;text-align: center;padding: 20px;position: relative;margin-top: 40px;}
+.options {list-style-type: none;padding: 0;margin: 0;display: flex;justify-content: center;flex-wrap: wrap;}
+.options li {margin: 15px;}
+.options a {display: block;background-color: #311ab3;color: white;text-decoration: none;padding: 15px 25px; border-radius: 8px; font-size: 1.2em;transition: background-color 0.3s, transform 0.2s;}
+.options a:hover {background-color: #0f12ac;transform: scale(1.05); /* Slight zoom effect */}
+.attractions {background-color: #fff;padding: 40px 20px;text-align: center;margin-top: 30px;}
+.attractions h2 {margin-bottom: 30px;color: #1c0bb6;}
+.features {display: flex;flex-wrap: wrap;justify-content: center; /* Center items */}
+.feature-item {
+    background-color: #f9f9f9;border: 1px solid #ccc;border-radius: 8px;padding: 20px;margin: 15px;flex: 1 1 200px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow */}
+.feature-item h3 {color: #1013a8; /* Warm color for headings */margin-bottom: 10px; }
